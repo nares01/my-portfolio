@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naresh Giri — Developer</title>
+  <meta name="description" content="BCA student & Frontend Developer from Nepal. Building clean, modern web experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── Scroll Progress ─── -->
+  <div id="progress-bar"></div>
+
+<!-- ─── Liquid Blobs Background ─── -->
+  <div class="liquid-bg">
+    <div class="liquid-blob lb-1"></div>
+    <div class="liquid-blob lb-2"></div>
+    <div class="liquid-blob lb-3"></div>
+    <div class="liquid-blob lb-4"></div>
+    <div class="liquid-blob lb-5"></div>
+  </div>
+
+  <!-- ─── Navbar ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">N<span>G</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="nav-inner">
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#experience">experience</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-grid">
+
+      <!-- Text -->
+      <div class="hero-text">
+        <p class="hero-greeting reveal">// hello world </p>
+
+        <h1 class="hero-name reveal rd1">Naresh Giri</h1>
+
+        <p class="hero-role reveal rd2">
+          I'm a &nbsp;
+          <span class="hero-role-typed" id="typed-role"></span>
+          <span class="cursor-blink"></span>
+        </p>
+
+        <p class="hero-bio reveal rd3">
+          BCA student at Tribhuvan University with a passion for crafting
+          clean, fast, and modern web experiences. Actively seeking
+          internships and freelance opportunities.
+        </p>
+
+        <div class="hero-actions reveal rd4">
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="resume.pdf" download class="btn btn-ghost">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials reveal rd5">
+          <a href="https://github.com/naresgiri9" target="_blank" class="social-pill" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/naresh-giri" target="_blank" class="social-pill" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/naress_giri" target="_blank" class="social-pill" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/9779822997348" target="_blank" class="social-pill" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="profile-wrap reveal rd2">
+        <div class="profile-frame">
+          <img src="image/profile.jpg" alt="Naresh Giri"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="img-fallback" style="display:none;">
+            <i class="fa-solid fa-user"></i>
+            <span>NARESH GIRI</span>
+          </div>
+        </div>
+        <div class="profile-badge">
+          <p>Status</p>
+          <strong><span class="badge-dot"></span> Open to Work</strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <div class="section-divider"><hr /></div>
+
+  <section id="about">
+    <div class="section-wrap">
+      <span class="section-label reveal">About</span>
+      <h2 class="section-title reveal rd1">A little about <span class="accent">me</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal rd2">
+          <p>
+            I'm a BCA student at Tribhuvan University with a genuine passion
+            for web development and building real-world solutions. I love
+            turning ideas into polished, performant web experiences.
+          </p>
+          <p>
+            Whether it's crafting pixel-perfect UIs, writing clean backend
+            logic in Python, or diving into a new framework — I'm always
+            learning and shipping.
+          </p>
+          <p>
+            I'm currently looking for internships and freelance projects where
+            I can contribute, grow, and collaborate with people who care about
+            quality.
+          </p>
+        </div>
+
+        <div class="about-stats reveal rd3">
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Learning</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Core Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
+  <div class="section-divider"><hr /></div>
+
+  <section id="skills">
+    <div class="section-wrap">
+      <span class="section-label reveal">Skills</span>
+      <h2 class="section-title reveal rd1">What I <span class="accent">work with</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal rd1">
+          <i class="fa-brands fa-html5" style="color:#E44D26;"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card reveal rd2">
+          <i class="fa-brands fa-css3-alt" style="color:#264DE4;"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card reveal rd3">
+          <i class="fa-brands fa-js" style="color:#F7DF1E;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card reveal rd4">
+          <i class="fa-brands fa-python" style="color:#3776AB;"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-card reveal rd5">
+          <i class="fa-brands fa-github" style="color:#e5e7eb;"></i>
+          <span>Git & GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════ -->
+  <div class="section-divider"><hr /></div>
+
+  <section id="experience">
+    <div class="section-wrap">
+      <span class="section-label reveal">Experience</span>
+      <h2 class="section-title reveal rd1">My <span class="accent">journey</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal rd2">
+          <div class="timeline-period">2023 — Present</div>
+          <div class="timeline-role">BCA Student</div>
+          <div class="timeline-org">Tribhuvan University, Nepal</div>
+        </div>
+        <div class="timeline-item reveal rd3">
+          <div class="timeline-period">2024 — Present</div>
+          <div class="timeline-role">Self-Taught Developer</div>
+          <div class="timeline-org">Online Platforms — YouTube, MDN, freeCodeCamp, Docs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
+  <div class="section-divider"><hr /></div>
+
+  <section id="projects">
+    <div class="section-wrap">
+      <span class="section-label reveal">Projects</span>
+      <h2 class="section-title reveal rd1">Things I've <span class="accent">built</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal rd2">
+          <img src="images/portfolio.png" alt="Portfolio Website" class="project-thumb"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="project-thumb-placeholder" style="display:none;">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">
+              Personal portfolio featuring animations, scroll-reveal effects,
+              a custom canvas interaction, and a glassmorphism UI design system.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link live">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              </a>
+              <a href="#" class="project-link source">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal rd3">
+          <img src="images/python.png" alt="Python Project" class="project-thumb"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="project-thumb-placeholder" style="display:none;">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Python Mini Project</h3>
+            <p class="project-desc">
+              Logic-based Python project using loops, functions, and file
+              handling to solve real-world automation problems.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">File Handling</span>
+              <span class="tech-tag">CLI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link live">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="#" class="project-link source">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <div class="section-divider"><hr /></div>
+
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="contact-center">
+        <span class="section-label reveal">Contact</span>
+        <h2 class="section-title reveal rd1">Let's <span class="accent">connect</span></h2>
+        <p class="contact-desc reveal rd2">
+          I'm open to internships, freelance projects, and collaborations.
+          Have an idea or an opportunity? I'd love to hear from you.
+        </p>
+
+        <a href="mailto:your@email.com" class="contact-email-btn reveal rd3">
+          <i class="fa-solid fa-envelope"></i> Send an Email
+        </a>
+
+        <div class="contact-socials reveal rd4">
+          <a href="https://github.com/naresgiri9" target="_blank" class="contact-social">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/naresh-giri" target="_blank" class="contact-social">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://instagram.com/naress_giri" target="_blank" class="contact-social">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a href="https://wa.me/9779822997348" target="_blank" class="contact-social">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── Footer ─── -->
+  <footer>
+    <p>Crafted with <span class="accent">♥</span> by Naresh Giri &mdash; &copy; 2026</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
